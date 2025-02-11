@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <ul>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>Hello! I'm Daniel Paul C. Bagube, I'm passsionate about web development and enjoy creating projects that solve real-world problems. This portfolio showcase some of my work and interest</p>
+                <img src="#" alt="A Placeholder Image for My Portfolio">
+            </section>
+            <section>
+                <h2>My Project</h2>
+                <table>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Project One</td>
+                        <td>A website that helps users track their daily habits.</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Project Two</td>
+                        <td>A simple to-do list application with local storage.</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Project Three</td>
+                        <td>A photography portfolio showcasing my best work.</td>
+                        <td>2023</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>Contact Me</h2>
+                <form action="/submit_form" method="POST">
+                    <div>
+                        <label for="name">Full Name: </label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address: </label>
+                        <input type="text" id="email" name="email">
+                    </div>
+    
+                    <fieldset>
+                        <legend>How statisfied are you with our service?</legend>
+                        <div>
+                            <input type="radio" id="very_satisfied" name="feedback">
+                            <label for="very_satisfied">Very Satisfied</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="satisfied" name="feedback">
+                            <label for="satisfied">Satisfied</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="neutral" name="feedback">
+                            <label for="neutral">Neutral</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dissatisfied" name="feedback">
+                            <label for="dissatisfied">Dissatisfied</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="very_dissatisfied" name="feedback">
+                            <label for="very_dissatisfied">Very Dissatisfied</label>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>What features do you value most?</legend>
+                        <div>
+                            <input type="checkbox" id="ease_of_use" name="features" value="ease_of_use">
+                            <label for="ease_of_use">Ease of Use</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" id="design" name="features" value="design">
+                            <label for="design">Design</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" id="customer_support" name="features" value="customer_support">
+                            <label for="customer_support">Customer Support</label>
+                        </div>
+                    </fieldset>
+                  
+    
+                    <label for="user_role">What best describes you?</label>
+                    <select name="user_role" id="user_role">
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="hobbyist">Hobbyist</option>
+                        <option value="other">Other</option>
+                    </select>
+                   
+                    <label for="additional_feedback">Additional Feedback</label>
+                    <div>
+                        <textarea name="additional_feedback" id="additional_feedback"></textarea>
+                    </div>
+    
+                    <input type="submit" name="submit" value="Submit">
+
+                </form>
+            </section>
+            <footer>
+                &copy; Daniel Paul C. Bagube 2025
+            </footer>
+            
+        </main>
+
+    </body>
+</html>
