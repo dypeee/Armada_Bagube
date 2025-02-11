@@ -3,6 +3,7 @@
     <head>
         <title>Document</title>
     </head>
+
     <body>
         <section>
             <h1>Survey Form</h1>
@@ -11,17 +12,16 @@
                     <label for="name">Full Name: </label>
                     <input type="text" id="name" name="name">
                 </div>
-
                 <div>
                     <label for="email">Email Address: </label>
                     <input type="text" id="email" name="email">
                 </div>
 
-                <div>
-                    <p>How statisfied are you with our service?</p>
+                <fieldset>
+                    <legend>How statisfied are you with our service?</legend>
                     <div>
-                        <input type="radio" id="verySatisfied" name="feedback">
-                        <label for="verySatisfied">Very Satisfied</label>
+                        <input type="radio" id="very_satisfied" name="feedback">
+                        <label for="very_satisfied">Very Satisfied</label>
                     </div>
                     <div>
                         <input type="radio" id="satisfied" name="feedback">
@@ -36,13 +36,13 @@
                         <label for="dissatisfied">Dissatisfied</label>
                     </div>
                     <div>
-                        <input type="radio" id="veryDissatisfied" name="feedback">
-                        <label for="veryDissatisfied">Very Dissatisfied</label>
+                        <input type="radio" id="very_dissatisfied" name="feedback">
+                        <label for="very_dissatisfied">Very Dissatisfied</label>
                     </div>
-                </div>
+                </fieldset>
 
-                <div>
-                    <p>What features do you value most?</p>
+                <fieldset>
+                    <legend>What features do you value most?</legend>
                     <div>
                         <input type="checkbox" id="ease_of_use" name="features" value="ease_of_use">
                         <label for="ease_of_use">Ease of Use</label>
@@ -54,29 +54,29 @@
                     </div>
 
                     <div>
-                        <input type="checkbox" id="customerSupport" name="features" value="customerSupport">
-                            <label for="customerSupport">Customer Support</label>
-                        </div>
+                        <input type="checkbox" id="customer_support" name="features" value="customer_support">
+                        <label for="customer_support">Customer Support</label>
                     </div>
+                </fieldset>
+              
 
+                <label for="user_role">What best describes you?</label>
+                <select name="user_role" id="user_role">
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="hobbyist">Hobbyist</option>
+                    <option value="other">Other</option>
+                </select>
+               
+                <label for="additional_feedback">Additional Feedback</label>
                 <div>
-                    <label for="userRole">What best describes you?</label>
-                    <select name="userRole" id="userRole">
-                        <option value="Student">Student</option>
-                        <option value="Professional">Professional</option>
-                        <option value="Hobbyist">Hobbyist</option>
-                        <option value="Other">Other</option>
-                    </select>
+                    <textarea name="additional_feedback" id="additional_feedback"></textarea>
                 </div>
 
-                <label for="additionalFeedback">Additional Feedback</label>
-                <div>
-                    <textarea name="additionalFeedback" id="additionalFeedback"></textarea>
-                </div>
-                <div>
-                    <input type="submit" name="submit" value="Submit">
-                </div>
+                <input type="submit" name="submit" value="Submit">
+               
             </form>
         </section>
     </body>
+
 </html>
