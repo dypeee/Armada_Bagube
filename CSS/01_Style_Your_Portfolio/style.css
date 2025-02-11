@@ -1,0 +1,150 @@
+body {
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(248, 248, 248));
+    font-family: 'Arial Narrow Bold', sans-serif
+}
+
+section {
+    margin: 3% 15%;
+}
+section h2{
+    text-align: center;
+}
+
+header {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 15%;
+    text-align: center;
+    background-image:linear-gradient(30deg,#010101,#1F1F1F, #737373) ;
+    color: white;
+    padding: 5px 0px;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    margin: 10px 15%;
+    border-bottom: 1px solid rgb(183, 183, 183);
+    border-top: 1px solid rgb(183, 183, 183);
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+}
+
+ul li a:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+section:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(214, 214, 214);
+    padding: 2% 10%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section:nth-child(1) p {
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.illustratorImage {
+    width: 40%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: rgb(228, 228, 228);
+}
+
+section:nth-child(3) {
+    border: 1px solid rgb(219, 219, 219);
+    padding: 0px 4% 1% 4%;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 2px;
+}
+
+#name{
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin: 6px;
+}
+
+input[type="checkbox"] {
+    margin: 6px;
+}
+fieldset{
+    margin: 20px 0px;
+}
+select{
+    border: 1px solid rgb(194, 194, 194);
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid rgb(194, 194, 194);
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+}
+.submitButton{
+    padding: 10px 20px;
+    background-color:#0B60DD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+.submitButton:hover{
+    background-color:#286dd4;
+}
+.submitButton:active{
+    background-color: #1953aa;
+}
+footer{
+    margin: 10px 15%;
+    color: white;
+    background-image:linear-gradient(200deg,#010101,#1F1F1F, #737373) ;
+    padding: 10px 10px;
+}
