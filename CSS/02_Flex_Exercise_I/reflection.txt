@@ -1,0 +1,4 @@
+Arranging the code provided using flexbox is challenging. Specially when i try 
+to arrange the aside and sections. The solution I did was locating the main
+and display flex to arrange it  horizontally. I also add some margin and padding
+for better display.
