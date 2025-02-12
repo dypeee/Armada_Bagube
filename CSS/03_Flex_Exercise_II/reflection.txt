@@ -1,0 +1,3 @@
+Regarding the flex exercise II, I don't know if my code is the proper way because
+I just adjust a little bit in the css and I get the expected result it took me
+around 5-10 minutes to complete.
