@@ -30,12 +30,14 @@ nav {
     border-top: 1px solid rgb(183, 183, 183);
     background-color: white;
 }
-
-ul {
-    list-style: none;
+ul{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+
 }
 
 ul li a {
