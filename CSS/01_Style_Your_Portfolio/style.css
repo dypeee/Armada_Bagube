@@ -6,7 +6,8 @@ body {
 section {
     margin: 3% 15%;
 }
-section h2{
+
+section h2 {
     text-align: center;
 }
 
@@ -15,7 +16,7 @@ header {
     font-size: 24px;
     margin: 10px 15%;
     text-align: center;
-    background-image:linear-gradient(30deg,#010101,#1F1F1F, #737373) ;
+    background-image: linear-gradient(30deg, #010101, #1F1F1F, #737373);
     color: white;
     padding: 5px 0px;
 }
@@ -30,14 +31,14 @@ nav {
     border-top: 1px solid rgb(183, 183, 183);
     background-color: white;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: center;
 }
-ul li{
-    list-style: none;
-    display: inline-block;
 
+ul li {
+    list-style: none;
 }
 
 ul li a {
@@ -53,7 +54,7 @@ ul li a:hover {
     background-color: rgb(220, 220, 220);
 }
 
-.about_me_section{
+.about_me_section {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(214, 214, 214);
     padding: 2% 10%;
@@ -101,7 +102,7 @@ input[type="text"] {
     border-radius: 2px;
 }
 
-#name{
+#name {
     margin-bottom: 10px;
 }
 
@@ -112,41 +113,48 @@ input[type="radio"] {
 input[type="checkbox"] {
     margin: 6px;
 }
-fieldset{
+
+fieldset {
     margin: 20px 0px;
 }
-select{
+
+select {
     border: 1px solid rgb(194, 194, 194);
     padding: 8px;
     font-size: 16px;
     width: 100%;
     margin-bottom: 15px;
 }
-textarea{
+
+textarea {
     width: 96%;
     border: 1px solid rgb(194, 194, 194);
     height: 100px;
     padding: 10px;
     font-size: 16px;
 }
-.submitButton{
+
+.submitButton {
     padding: 10px 20px;
-    background-color:#0B60DD;
+    background-color: #0B60DD;
     color: white;
     border: none;
     border-radius: 5px;
     width: 100px;
     margin-top: 10px;
 }
-.submitButton:hover{
-    background-color:#286dd4;
+
+.submitButton:hover {
+    background-color: #286dd4;
 }
-.submitButton:active{
+
+.submitButton:active {
     background-color: #1953aa;
 }
-footer{
+
+footer {
     margin: 10px 15%;
     color: white;
-    background-image:linear-gradient(200deg,#010101,#1F1F1F, #737373) ;
+    background-image: linear-gradient(200deg, #010101, #1F1F1F, #737373);
     padding: 10px 10px;
 }
