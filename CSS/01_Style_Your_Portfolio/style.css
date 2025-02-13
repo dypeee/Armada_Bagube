@@ -125,6 +125,9 @@ select {
     width: 100%;
     margin-bottom: 15px;
 }
+label{
+    display: block;
+}
 
 textarea {
     width: 96%;
