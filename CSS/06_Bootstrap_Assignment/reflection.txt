@@ -1,0 +1,1 @@
+Reflecting on my approach has been challenging because I'm unsure if my HTML structure is correct. I worry that I might be using the wrong approach, and I face similar concerns with my CSS. However, since I have a background in website creation, it took me around an hour to complete. My main struggle was determining the best and most correct approach to follow.
