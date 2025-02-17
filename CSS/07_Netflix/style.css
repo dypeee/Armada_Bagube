@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 1px dotted red;
+}
+
+body {
+    background-color: #000000;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+main, section, footer {
+    padding: 0px 18%;
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.757), rgba(0, 0, 0, 0.601), rgb(0, 0, 0)), url('/CSS/07_Netflix/netflix_image_asset/PH-en-20250113-TRIFECTA-perspective_8171c01e-c334-403b-bfa2-133bcc962aaf_small.jpg');
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .netflixLogo {
+    width: 150px;
+}
+
+nav form {
+    display: flex;
+    gap: 10px;
+}
+
+nav form select {
+    background-color: #141718;
+    color: white;
+    border: 1px solid rgb(162, 162, 162);
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+nav form a, form input[type="submit"] {
+    color: white;
+    background: #E50914;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+header,footer {
+    text-align: center;
+    color: white;
+}
+
+header {
+    padding: 20%;
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+header h3 {
+    line-height: 80px;
+}
+
+header form,footer form {
+    padding: 10px 100px;
+    display: flex;
+    gap: 5px;
+}
+
+input[type="email"] {
+    background-color: #0000008a;
+    padding: 20px;
+    border: 1px solid #474747;
+    border-radius: 3px;
+    flex-grow: 5;
+    color: white;
+}
+
+input[type="submit"] {
+    flex-grow: 2;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px;
+}
+
+section,footer {
+    color: white;
+    margin-bottom: 5%;
+}
+
+.trending_list_container {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.trending_list_container button {
+    height: 120px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #1A1A1A;
+    color: rgb(195, 195, 195);
+    border: none;
+    border-radius: 10px;
+}
+
+.reason_list_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.reason_list_container div {
+    background-color: #192247;
+    height: 300px;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.reason_list_container div h2 {
+    font-size: 28px;
+}
+
+.reason_list_container div p {
+    color: rgb(216, 216, 216);
+    font-size: 19px;
+    margin-top: 20px;
+}
