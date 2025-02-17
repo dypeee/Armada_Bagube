@@ -18,21 +18,19 @@ main {
     border-radius: 10px;
 }
 
-.sectionForm {
-    padding: 15px 0px;
-}
-
 header h1 {
     background-color: #0078D4;
     color: white;
     padding: 10px;
     border-radius: 5px;
+    padding: 15px 0px;
 }
 
 form {
     display: flex;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin: 20px 0px;
 }
 
 #taskInput {
@@ -43,7 +41,7 @@ form {
     border-radius: 5px;
 }
 
-button {
+.addTaskBtn {
     flex-grow: 1;
     padding: 10px 20px;
     background-color: #0B60DD;
@@ -53,18 +51,12 @@ button {
     width: 100px;
 }
 
-button:hover {
+.addTaskBtn:hover {
     background-color: #286dd4;
 }
 
-button:active {
+.addTaskBtn:active {
     background-color: #1953aa;
-}
-
-.sectionList {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 ul {

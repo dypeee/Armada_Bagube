@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 1px dotted red;
 }
 
 body {
@@ -17,7 +18,7 @@ header {
 
 nav {
     display: flex;
-    flex-grow: 1;
+    justify-self: start;
 }
 
 nav ul {
@@ -36,16 +37,12 @@ nav ul li a {
     font-size: 18px;
 }
 
-.search_container {
-    display: flex;
-    flex-grow: 3;
-}
-
 form {
     border-radius: 5px;
     padding: 0px 10px;
     border: 1px solid white;
     width: 300px;
+    margin-left: 7%;
 }
 
 .icon {
@@ -108,8 +105,9 @@ section {
     font-size: 18px;
 }
 
-.intro_section button {
+.readDocsBtn{
     background-color: #712CF9;
+    text-decoration: none;
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -135,7 +133,7 @@ section {
     list-style: none;
 }
 
-.get_started_section {
+section {
     padding: 10px 100px;
 }
 
