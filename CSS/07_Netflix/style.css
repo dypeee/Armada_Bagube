@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 1px dotted red;
+    /* outline: 1px dotted red; */
 }
 
 body {
@@ -9,7 +9,9 @@ body {
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-main, section, footer {
+main,
+section,
+footer {
     padding: 0px 18%;
 }
 
@@ -42,7 +44,8 @@ nav form select {
     border-radius: 5px;
 }
 
-nav form a, form input[type="submit"] {
+nav form a,
+form input[type="submit"] {
     color: white;
     background: #E50914;
     text-decoration: none;
@@ -50,7 +53,8 @@ nav form a, form input[type="submit"] {
     border-radius: 5px;
 }
 
-header,footer {
+header,
+footer {
     text-align: center;
     color: white;
 }
@@ -68,7 +72,8 @@ header h3 {
     line-height: 80px;
 }
 
-header form,footer form {
+header form,
+footer form {
     padding: 10px 100px;
     display: flex;
     gap: 5px;
@@ -91,12 +96,13 @@ input[type="submit"] {
     padding: 13px;
 }
 
-section,footer {
+section,
+footer {
     color: white;
     margin-bottom: 5%;
 }
 
-.trending_list_container {
+.trending_section ul {
     display: flex;
     align-items: center;
     gap: 35px;
@@ -104,7 +110,11 @@ section,footer {
     padding: 20px 10px;
 }
 
-.trending_list_container button {
+.trending_section ul li {
+    list-style: none;
+}
+
+.trending_section ul button {
     height: 120px;
     font-size: 20px;
     padding: 5px;
@@ -114,27 +124,27 @@ section,footer {
     border-radius: 10px;
 }
 
-.reason_list_container {
+.reason_section ul {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     gap: 30px;
 }
 
-.reason_list_container div {
+.reason_section ul li {
     background-color: #192247;
     height: 300px;
     width: 280px;
     padding: 15px;
     border-radius: 10px;
-
+    list-style: none;
 }
 
-.reason_list_container div h2 {
+.reason_section ul li h2 {
     font-size: 28px;
 }
 
-.reason_list_container div p {
+.reason_section ul li p {
     color: rgb(216, 216, 216);
     font-size: 19px;
     margin-top: 20px;
