@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px dotted red; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    gap: 20px;
+    padding: 5px 17%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header ul li,
+nav ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+header form {
+    display: flex;
+    flex-grow: 5;
+    align-items: center;
+    gap: 10px;
+}
+
+header form input {
+    width: 44%;
+    padding: 6px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(183, 183, 183);
+    font-size: 14px;
+}
+
+header form a,
+header form button,
+.front_section div button,
+.stackoverflow_teams_container div button,
+.stackoverflow_ai_container div button,
+.stackover_advertising_container button,
+.stackover_api_container button,
+.work_here_container div button {
+    border: none;
+    border-radius: 5px;
+}
+
+header form a {
+    text-decoration: none;
+    border: 1px solid #1B75D0;
+    font-size: 12px;
+    padding: 8px 12px;
+    color: #1B75D0;
+}
+
+header form button,
+.front_section div button,
+.stackoverflow_teams_container div button,
+.stackoverflow_ai_container div button,
+.stackover_advertising_container button,
+.stackover_api_container button,
+.work_here_container div button {
+    background-color: #1B75D0;
+    padding: 8px 12px;
+    color: white;
+}
+
+main {
+    display: flex;
+    padding: 0px 17%;
+    margin-top: 50px;
+}
+
+main nav {
+    width: 160px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+main nav ul li {
+    margin: 3px 0px;
+    padding: 6px 0px;
+
+}
+
+main nav ul li a {
+    color: rgb(106, 106, 106);
+    text-decoration: none;
+    margin: 10px 0px;
+    font-size: 13px;
+
+}
+
+main nav ul li img {
+    margin: 0px 3px -4px 0px;
+}
+
+
+main nav ul li:nth-child(3),
+main nav ul li:nth-child(5) {
+    margin-bottom: 30px;
+}
+
+.sub_main {
+    width: 87.5%;
+    margin-left: 13%;
+}
+
+.sub_main .front_section {
+    display: flex;
+    padding: 50px 45% 50px 50px;
+    background-color: #F9FAFA;
+    position: relative;
+}
+
+.front_section div h1 {
+    font-size: 40px;
+    line-height: 50px;
+
+}
+
+.front_section div h1 span {
+    background-image: url('/CSS/08_Stackoverflow/Stack Overflow/background-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    padding: 0px 10px;
+
+}
+
+.front_section div p {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.front_section img {
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.front_section div button {
+    padding: 15px 20px;
+}
+
+.front_section div a,
+.stackover_advertising_container a {
+    color: #1B75D0;
+    margin: 30px 10px;
+}
+
+.services_section {
+    padding-top: 40px;
+}
+
+.services_section h3 {
+    line-height: 50px;
+    font-size: 20px;
+    color: #333537;
+}
+
+.stackoverflow_teams_container,
+.stackover_advertising_container,
+.stackover_api_container,
+.work_here_container {
+    border: 1px solid #E7EAEB;
+    border-radius: 10px;
+}
+
+.stackoverflow_teams_container,
+.work_here_container {
+    display: flex;
+    position: relative;
+}
+
+.stackoverflow_teams_container div,
+.stackoverflow_ai_container div,
+.work_here_container div {
+    padding: 10px 48% 40px 30px;
+}
+
+
+.stackoverflow_teams_container div .stackoverflow_teams_logo {
+    width: 38%;
+}
+
+.stackoverflow_teams_container div p,
+.stackover_advertising_container p,
+.stackover_api_container p,
+.work_here_container div p {
+    line-height: 25px;
+    font-size: 20px;
+    margin: 20px 0px 30px 0px;
+}
+
+.stackoverflow_teams_container div a {
+    color: #1B75D0;
+    margin-left: 30px;
+}
+
+.stackoverflow_teams_container .stackoverflow_teams_illus,
+.stackoverflow_ai_container .stackoverflow_ai_image,
+.work_here_container .work_here_image {
+    position: absolute;
+    width: 480px;
+    bottom: 0;
+    right: 0;
+}
+
+.stackoverflow_ai_container {
+    position: relative;
+    background-color: #3B4045;
+    border-radius: 10px;
+    margin: 40px 0px;
+}
+
+.stackoverflow_ai_container div .stackoverflow_ai_logo {
+    width: 45%;
+}
+
+.stackoverflow_ai_container div p {
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 10px 0px 25px 0px;
+}
+
+.advertising_api_container {
+    display: flex;
+    gap: 20px;
+}
+
+.advertising_api_container .stackover_advertising_container,
+.advertising_api_container .stackover_api_container {
+    width: 50%;
+    padding: 30px;
+}
+
+.stackover_advertising_logo,
+.stackoverflow_logo {
+    width: 40%;
+}
+
+.stackover_api_logo {
+    width: 45%;
+}
+
+.work_here_section {
+    margin: 50px 0px;
+}
+
+.work_here_container .work_here_image {
+    width: 55%;
+}
+
+.work_here_section h3 {
+    margin: 20px 0px;
+}
