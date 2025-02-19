@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 1px dotted red;
+    /* outline: 1px dotted red; */
 }
 
 body {
@@ -68,7 +68,7 @@ header button,
     border-radius: 5px;
 }
 
-header a {
+header .login {
     text-decoration: none;
     border: 1px solid #1B75D0;
     font-size: 12px;
