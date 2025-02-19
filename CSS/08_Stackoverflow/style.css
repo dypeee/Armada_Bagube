@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px dotted red; */
+    outline: 1px dotted red;
 }
 
 body {
@@ -43,21 +43,21 @@ header ul li a {
 
 header form {
     display: flex;
-    flex-grow: 5;
     align-items: center;
+    width: 32%;
     gap: 10px;
 }
 
 header form input {
-    width: 44%;
+    width: 100%;
     padding: 6px 20px;
     border-radius: 5px;
     border: 1px solid rgb(183, 183, 183);
     font-size: 14px;
 }
 
-header form a,
-header form button,
+header a,
+header button,
 .front_section div button,
 .stackoverflow_teams_container div button,
 .stackoverflow_ai_container div button,
@@ -68,7 +68,7 @@ header form button,
     border-radius: 5px;
 }
 
-header form a {
+header a {
     text-decoration: none;
     border: 1px solid #1B75D0;
     font-size: 12px;
@@ -76,7 +76,7 @@ header form a {
     color: #1B75D0;
 }
 
-header form button,
+header button,
 .front_section div button,
 .stackoverflow_teams_container div button,
 .stackoverflow_ai_container div button,
