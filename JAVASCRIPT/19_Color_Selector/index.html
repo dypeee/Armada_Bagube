@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #container {
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            margin: 50px auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .color-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .color-box {
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; }
+        .orange { background-color: orange; }
+        .purple { background-color: purple; }
+    </style>
+</head>
+<body>
+
+    <h1>Color Selector</h1>
+    <p>Click a color to change the background.</p>
+    <div id="container">
+        <div class="color-row">
+            <button class="color-box red">Red</button>
+            <button class="color-box blue">Blue</button>
+            <button class="color-box green">Green</button>
+        </div>
+        <div class="color-row">
+            <button class="color-box yellow">Yellow</button>
+            <button class="color-box orange">Orange</button>
+            <button class="color-box purple">Purple</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("container").addEventListener("click", function() {
+            alert("You clicked the container!");
+
+            // "this" refers to the element that triggered the event (in this case, #container)
+            this.style.backgroundColor = "lightgray"; 
+        });
+
+        document.querySelectorAll(".color-box").forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.stopPropagation();  // Prevents the container click event
+                document.getElementById("container").style.backgroundColor = "lightblue";
+                alert("You clicked the " + this.textContent + " button!");
+            });
+        });
+    </script>
+
+</body>
+</html>

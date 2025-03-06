@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    padding: 1rem;
+ }
+ main .profile_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    gap: 0.5rem;
+    text-align: center;
+ }
+ main .form_section{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+input,button{
+    padding: 0.5rem;
+    border: 1px solid rgb(210, 210, 210);
+    font-size: 16px;
+    margin: 0.5rem 0rem;
+ }
+ main img{
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+ }

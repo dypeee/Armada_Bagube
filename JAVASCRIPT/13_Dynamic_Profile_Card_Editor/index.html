@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Profile Card Editor</title>
+</head>
+
+<body>
+
+    <main>
+        <section class="profile_section">
+            <img src="luffy.jpg" alt="My Image" id="myImage">
+            <h2>Daniel</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, numquam.</p>
+        </section>
+        <section class="form_section">
+
+            <label for="name">Update Name:</label>
+            <input type="text" name="name" id="name">
+            <button onclick="updateName()">Update Name</button>
+
+            <label for="bio">Update Bio:</label>
+            <input type="text" name="bio" id="bio">
+            <button onclick="updateBio()">Update Bio</button>
+
+            <label for="image">Update Image URL:</label>
+            <input type="text" name="image" id="image">
+            <button onclick="updateImage()">Update Image</button>
+
+            <label for="background">Change Background Color:</label>
+            <input type="color" name="background" id="background">
+            <button onclick="updateBackground()">Update Background Color</button>
+
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
