@@ -18,7 +18,7 @@ depositBtn.addEventListener('click', function () {
     } else if (inputAmount) {
         document.getElementById('currentBalance').innerText = newBalance
 
-        document.getElementById('message').innerText = `Successfully Deposit $${newBalance}`
+        document.getElementById('message').innerText = `Successfully Deposit $${inputAmount}`
         setTimeout(() => {
             document.getElementById('message').innerText = '';
         }, 3000);
@@ -53,7 +53,7 @@ withdrawBtn.addEventListener('click', function () {
         alert('You Reached the daily limit of $'+ dailyLimit)
     }else if (inputAmount <= currentBalance) {
         document.getElementById('currentBalance').innerText = newBalance
-        document.getElementById('message').innerText = `Successfully Withdraw $${newBalance}`
+        document.getElementById('message').innerText = `Successfully Withdraw $${inputAmount}`
         setTimeout(() => {
             document.getElementById('message').innerText = "";
         }, 3000);

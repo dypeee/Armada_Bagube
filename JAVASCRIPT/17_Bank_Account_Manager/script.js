@@ -14,10 +14,10 @@ depositBtn.addEventListener('click', function () {
     } else if (inputAmount) {
         document.getElementById('currentBalance').innerText = newBalance
 
-        document.getElementById('message').innerText = `Successfully Withdraw $${newBalance}`
+        document.getElementById('message').innerText = `Successfully Deposit $${inputAmount}`
         setTimeout(() => {
             document.getElementById('message').innerText = '';
-        }, 1000);
+        }, 2000);
     } else {
         alert('Insufficient Balance!')
     }
@@ -35,7 +35,7 @@ withdrawBtn.addEventListener('click', function () {
         alert('Invalid Amount')
     } else if (inputAmount <= currentBalance) {
         document.getElementById('currentBalance').innerText = newBalance
-        document.getElementById('message').innerText = `Successfully Withdraw $${newBalance}`
+        document.getElementById('message').innerText = `Successfully Withdraw $${inputAmount}`
         setTimeout(() => {
             document.getElementById('message').innerText = ""
         }, 2000);
