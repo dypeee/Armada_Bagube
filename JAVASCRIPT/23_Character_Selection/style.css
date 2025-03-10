@@ -1,0 +1,5 @@
+.hover-effect:hover {
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(233, 233, 233);
+    transform: scale(1.1);
+}
