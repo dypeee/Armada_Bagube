@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/EmptyCart_styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <aside>
+        <img id="logoutBtn" src="/assets/logo.svg" alt="Logo">
+        <a href="/src/user/dashboard.html"><img src="/assets/dashboard_icon.svg" alt="Dashboard Icon"></a>
+    </aside>
+    
+    <main>
+        <header>
+            <ul id="headerContainer" class="list-unstyled">
+                <li>
+                    <h6><img src="/assets/header_icon.svg" alt="Header Icon"> Let's order fresh items for you.</h6>
+                    <a id="bar_icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </li>
+                <nav class="profile-nav">
+                    <!-- <button class="profile-button">
+                        <img src="/assets/PV assets/profile.png" alt="User Profile" class="profile-picture">
+                    </button>
+                    <section id="profile-dropdown" class="dropdown-menu hidden">
+                        <a href="/src/user/Landing_Page.html" class="logout-button">
+                            Logout
+                            <img src="/assets/PV assets/logout_icn.png" alt="Logout Icon" class="logout-icon">
+                        </a>
+                    </section> -->
+                    <div class="dropdown">
+                        <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ray
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" id="logoutBtn" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </ul>
+        </header>
+
+        <section class="sub_main">
+            <section class="search_section">
+                <form>
+                    <input type="text" class="form-control" name="search" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <button class="cart_btn"><i class="fa-solid fa-cart-shopping"></i> Cart (0)</button>
+            </section>
+
+            <section class="row g-4 mt-3">
+                <section class="col-md-7">
+                    <section class="card border-0 shadow-sm text-center p-5">
+                        <p class="text-muted">There are no items in this cart.</p>
+                        <a href="/src/user/dashboard.html" class="btn btn-outline-primary mt-2">Continue Shopping</a>
+                    </section>
+                </section>
+
+                <aside class="col-md-5">
+                    <section class="card">
+                        <section class="card-body">
+                            <section class="mb-4">
+                                <h4 class="card-title mb-3">Shipping Information</h4>
+                                <section class="progress mb-4" style="height: 4px;">
+                                    <section class="progress-bar" role="progressbar" style="width: 33%"></section>
+                                </section>
+                                <form>
+                                    <section class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Address">
+                                    </section>
+                                    <section class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Address 2">
+                                    </section>
+                                    <section class="row g-3">
+                                        <section class="col-5">
+                                            <input type="text" class="form-control" placeholder="City">
+                                        </section>
+                                        <section class="col-4">
+                                            <input type="text" class="form-control" placeholder="State">
+                                        </section>
+                                        <section class="col-3">
+                                            <input type="text" class="form-control" placeholder="ZIP">
+                                        </section>
+                                    </section>
+                                </form>
+                            </section>
+
+                            <section class="border-top pt-4">
+                                <h4 class="card-title mb-3">Order Summary</h4>
+                                <section class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Subtotal</span>
+                                    <span id="subtotal">$0</span>
+                                </section>
+                                <section class="d-flex justify-content-between mb-3">
+                                    <span class="text-muted">Shipping Fee</span>
+                                    <span id="shipping-fee">$0</span>
+                                </section>
+                                <section class="d-flex justify-content-between border-top pt-3 mb-4">
+                                    <strong>Total Amount</strong>
+                                    <strong id="total-amount">$0</strong>
+                                </section>
+                                <button class="btn btn-primary w-100" id="checkout-btn">Proceed to Checkout</button>
+                            </section>
+                        </section>
+                    </section>
+                </aside>
+            </section>
+        </section>
+    </main>
+
+    <!-- Modal for Empty Cart -->
+    <section class="modal fade" id="emptyCartModal" tabindex="-1" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
+        <section class="modal-dialog">
+            <section class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="emptyCartModalLabel">Cart is Empty</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <p class="modal-body">
+                    Please add items to your cart before proceeding to checkout.
+                </p>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </footer>
+            </section>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/empty.js"></script>  
+</body>
+</html>
