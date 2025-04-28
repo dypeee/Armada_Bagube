@@ -253,7 +253,7 @@ public class Main {
                     
                     System.out.println("--- View All Students ---");
                     System.out.println("[1] Sort student list alphabetically by NAME");
-                    System.out.println("[2] Sort student list alphabetically by GPA");
+                    System.out.println("[2] Sort student list by GPA");
                     System.out.print("Choice: ");
                     choice = scan.nextInt();
                     scan.nextLine();
