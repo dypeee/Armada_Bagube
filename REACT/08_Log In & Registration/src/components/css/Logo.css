@@ -1,0 +1,11 @@
+
+.logo_section img{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.logo_section h1, p{
+    margin: 0;
+}
+

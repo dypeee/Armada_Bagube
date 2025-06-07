@@ -24,7 +24,7 @@ class Student implements Archivable {
 
     public double calculateGPA() {
         double totalGradePoints = 0.0;
-        for (Subject subject : subjects) {
+        for (Subject subject : subjects) {  
             totalGradePoints += subject.grade;
         }
         return totalGradePoints / subjects.size();

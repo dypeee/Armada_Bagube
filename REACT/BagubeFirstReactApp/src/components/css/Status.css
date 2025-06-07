@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.classSection {
+    width: 100%;
+    border: 1px solid rgb(242, 242, 242);
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgb(235, 235, 235);
+    padding: 1rem;
+    margin: 0.2rem 0rem;
+    
+}
+.classSection img{
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    border-radius: 50%;
+
+}
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+   
+}
+.userInformation{
+    text-align: start;
+    padding: 0.3rem;
+    margin-bottom: 5px;
+}
+.userInformation p{
+    font-size: 10px;
+    line-height: 10px;
+}
+.contentName{
+    font-size: 14px;
+}
